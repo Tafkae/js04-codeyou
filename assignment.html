@@ -1,58 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Introduction to JS: Conditionals | Assignment</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="/" class="link">Concept</a></li>
-                <li class="nav-item"><a href="./assignment.html" class="link">Assignment</a></li>
-            </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="/" class="link">Concept</a></li>
+          <li class="nav-item">
+            <a href="./assignment.html" class="link">Assignment</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="main">
-        <section class="concept">
-            <h2 class="title">Assignment</h2>
-            <p class="paragraph">In this assignment, you will checking to see whether a person can vote, purchase alcohol, or do none of those. When the submit button is pressed, the correct message should be displayed.</p>
+      <section class="concept">
+        <h2 class="title">Assignment</h2>
+        <p class="paragraph">
+          In this assignment, you will checking to see whether a person can
+          vote, purchase alcohol, or do none of those. When the submit button is
+          pressed, the correct message should be displayed.
+        </p>
 
-            <p class="paragraph">These are the messages that should render based upon age's value:</p>
-            <ul class="list">
-                <li class="list-item"><code class="inline-code">You can vote and purchase alchol.</code></li>
-                <li class="list-item"><code class="inline-code">You can vote, but you cannot purchase alcohol.</code></li>
-                <li class="list-item"><code class="inline-code">You cannot vote and you cannot purchase alcohol.</code></li>
-            </ul>
+        <p class="paragraph">
+          These are the messages that should render based upon age's value:
+        </p>
+        <ul class="list">
+          <li class="list-item">
+            <code class="inline-code">You can vote and purchase alcohol.</code>
+          </li>
+          <li class="list-item">
+            <code class="inline-code"
+              >You can vote, but you cannot purchase alcohol.</code
+            >
+          </li>
+          <li class="list-item">
+            <code class="inline-code"
+              >You cannot vote and you cannot purchase alcohol.</code
+            >
+          </li>
+        </ul>
 
-            <p class="paragraph">Make the following changes in <code class="inline-code">assignment.js</code>. These values will be reflected in the "Answer Ouput" section.</p>
-            <p class="paragraph">
-                <ul class="list">
-                    <li class="list-item">Create an immutable variable that will store a reference to the paragraph tag with the id of <code class="inline-code">response</code>.</li>
-                    <li class="list-item">Create a mutable variable called <code class="inline-code">age</code>, but do not assign it a value.</li> 
-                    <li class="list-item">Write your conditional logic inside the <code class="inline-code">checkAgeAndRespond</code> function.</li>
-                    <li class="list-item">Read and try to understand the code that exists already. Write notes/questions and bring them to class.</li>
-                </ul>
-            </p>
+        <p class="paragraph">
+          Make the following changes in
+          <code class="inline-code">assignment.js</code>. These values will be
+          reflected in the "Answer Ouput" section.
+        </p>
+        <p class="paragraph"></p>
+        <ul class="list">
+          <li class="list-item">
+            Create an immutable variable that will store a reference to the
+            paragraph tag with the id of
+            <code class="inline-code">response</code>.
+          </li>
+          <li class="list-item">
+            Create a mutable variable called
+            <code class="inline-code">age</code>, but do not assign it a value.
+          </li>
+          <li class="list-item">
+            Write your conditional logic inside the
+            <code class="inline-code">checkAgeAndRespond</code> function.
+          </li>
+          <li class="list-item">
+            Read and try to understand the code that exists already. Write
+            notes/questions and bring them to class.
+          </li>
+        </ul>
 
+        <h3 class="sub-title">Answer Output</h3>
+        <label class="label" for="age-input">Enter an age:</label>
+        <input type="number" min="1" max="100" class="input" id="age-input" />
+        <p id="response" class="paragraph self-center"></p>
 
-            <h3 class="sub-title">Answer Ouput</h3>
-            <label class="label" for="age-input">Enter an age:</label>
-            <input type="number" min="1" max="100" class="input" id="age-input">
-            <p id="response" class="paragraph self-center"></p>
-
-            <button id="submission-btn">Submit</button>
-
-        </section>
-
-        
+        <button id="submission-btn">Submit</button>
+      </section>
     </main>
 
     <footer></footer>
 
     <script src="./js/assignment.js"></script>
-</body>
+  </body>
 </html>
